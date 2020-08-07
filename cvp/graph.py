@@ -166,7 +166,7 @@ class GraphResBlock(nn.Module):
         else:
             raise NotImplementedError
         for n in range(self.num_units):
-            if n == self.num_units - 1:
+            if n==self.num_units - 1:
                 gconv_kwargs['output_dim'] = output_dim
             else:
                 gconv_kwargs['output_dim'] = input_dim
